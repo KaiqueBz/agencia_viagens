@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+</head>
+
+<body>
+    <header>
+        <img src="/assets/imagens/local-logo.png" alt="logo">
+        <p>Agência de Viagens</p>
+    </header>
+    <section>
+        <form action="" mrthod="post">
+            <div class="topo-table">
+                <h1>Solicite um orçamento</h1>
+            </div>
+            <h2>Informe seus dados</h2>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required placeholder="Nome completo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email para contato">
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="data-ida">Data de ida</label>
+            <input type="date" id="data-ida">
+            <label for="data-volta">Data de volta</label>
+            <input type="date" id="data-volta">
+            <label for="origem">origem</label>
+            <select name="origem" id="origem" required>
+                <option value="">Partindo de </option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <select name="destino" id="destino" required>
+                <option value="">Indo para </option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+
+            <label for="quarto-infantil">Quarto com cama infantil? </label>
+            <input type="radio" id="sim" name="quarto-infantil" value="Sim" required>
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="quarto-infantil" value="Não" required>
+            <label for="nao">Não</label>
+
+            <label for="preferencias">Preferências de hospedagem</label>
+            <input type="checkbox" name="preferencias" value="Piscina" required>
+            <label for="piscina">Piscina</label>
+            <input type="checkbox" name="preferencias" value="Wi-fi">
+            <label for="Wi-Fi">Wi-Fi</label>
+            <input type="checkbox" name="preferencias" value="Garagem">
+            <label for="garagem">Garagem</label>
+            <input type="checkbox" name="preferencias" value="suite">
+            <label for="piscina">Suite</label>
+
+            <button type="submite">Solicitar orçamento</button>
+        </form>
+    </section>
+
+    <main>
+        <h3>Ofertas</h3>
+        <p>Com até 50% de desconto</p>
+
+        <div class="todas-imagens">
+            <div class="imagen-conteudo">
+                <img src="/assets/imagens/rio.jpg" alt="Rio de Janeiro">
+                <p>Rio de Janeiro</p>
+            </div>
+            <div class="imagen-conteudo">
+                <img src="/assets/imagens/manaus.jpg" alt="Manaus">
+                <p>Manaus</p>
+            </div>
+            <div class="imagen-conteudo">
+                <img src="/assets/imagens/niteroi.jpg" alt="Niteroi">
+                <p>Rio de Janeiro</p>
+            </div>
+            <div class="imagen-conteudo">
+                <img src="/assets/imagens/saopaulo.jpg" alt="São Paulo">
+                <p>São Paulo</p>
+            </div>
+            <div class="imagen-conteudo">
+                <img src="/assets/imagens/maranhao.jpg" alt="Maranão">
+                <p>Maranhão</p>
+            </div>
+        </div>
+        <section>
+            <div class="texto-section">
+                <h3>Explore a Natureza</h3>
+                <p>Viaje e veja o melhor que a natureza tem a oferecer</p>
+            </div>
+
+            <div class="imagem-secao-dois">
+                <img src="/assets/imagens/lencol.jpg" alt="Lençois Maranhenses">
+                <div class="conteudo-secao-dois">
+                    <h4> Lençois Maranhenses, Brasil</h4>
+                    <p>Ida e volta a partir de R$79</p>
+                </div>
+            </div>
+            <div class="imagem-secao-dois">
+                <img src="/assets/imagens/goias.jpg" alt="Cachoeira Santa Bárbara">
+                <div class="conteudo-secao-dois">
+                    <h4> Cachoeira Santa Bárbara, Brasil</h4>
+                    <p>Ida e volta por R$139</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
