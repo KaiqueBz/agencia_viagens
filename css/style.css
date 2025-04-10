@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+}
+ .conteudo-header{
+    display:flex;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 10rem;
+    gap: 1.5rem;
+}
+.conteudo-header img{
+    height: 2rem;
+}
+.conteudo-header p{
+    font-size: 1.5rem;
+    color: rgb(125, 0, 241);
+}
+.form{
+    background-image: url("/assets/imagens/bahia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+}
+
+.form-aling{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+form{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 60vw;
+}
+.topo-table{
+    background-color: rgb(125, 0, 241);
+    width: 100%;
+    color: #fff
+}
+
+.conteudo-table-topo{
+    display: flex;
+    justify-content: center;
+    padding:0.6rem;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 1.3rem;
+}
+
+.topo-table img{
+    height: 1.6rem;
+    transform: rotate(125deg);
+}
+.topo-table h1{
+    font-size: 1.6em;
+}
+

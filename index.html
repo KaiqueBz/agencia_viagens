@@ -4,63 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Agência de Viagens</title>
 </head>
 
 <body>
     <header>
-        <img src="/assets/imagens/local-logo.png" alt="logo">
-        <p>Agência de Viagens</p>
+        <div class="conteudo-header">
+            <img src="/assets/imagens/local-logo.png" alt="logo">
+            <p>Agência de Viagens</p>
+        </div>
     </header>
-    <section>
-        <form action="" mrthod="post">
-            <div class="topo-table">
-                <h1>Solicite um orçamento</h1>
-            </div>
-            <h2>Informe seus dados</h2>
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required placeholder="Nome completo">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="Email para contato">
-            <label for="celular">Celular</label>
-            <input type="tel" id="celular" name="celular" required placeholder="(xx) xxxxx-xxxx">
+    <section class="form">
+        <div class="form-aling">
+            <form action="" mrthod="post">
+                <div class="topo-table">
+                    <div class="conteudo-table-topo">
+                        <img src="/assets/imagens/aviao.png" alt="logo avião" ; <h1>Solicite um orçamento</h1>
+                    </div>
+                </div>
+                <h2>Informe seus dados</h2>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="Nome completo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Email para contato">
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" required placeholder="(xx) xxxxx-xxxx">
 
-            <label for="data-ida">Data de ida</label>
-            <input type="date" id="data-ida">
-            <label for="data-volta">Data de volta</label>
-            <input type="date" id="data-volta">
-            <label for="origem">origem</label>
-            <select name="origem" id="origem" required>
-                <option value="">Partindo de </option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-            <select name="destino" id="destino" required>
-                <option value="">Indo para </option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
+                <label for="data-ida">Data de ida</label>
+                <input type="date" id="data-ida">
+                <label for="data-volta">Data de volta</label>
+                <input type="date" id="data-volta">
+                <label for="origem">origem</label>
+                <select name="origem" id="origem" required>
+                    <option value="">Partindo de </option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <select name="destino" id="destino" required>
+                    <option value="">Indo para </option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
 
-            <label for="quarto-infantil">Quarto com cama infantil? </label>
-            <input type="radio" id="sim" name="quarto-infantil" value="Sim" required>
-            <label for="sim">Sim</label>
-            <input type="radio" id="nao" name="quarto-infantil" value="Não" required>
-            <label for="nao">Não</label>
+                <label for="quarto-infantil">Quarto com cama infantil? </label>
+                <input type="radio" id="sim" name="quarto-infantil" value="Sim" required>
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="quarto-infantil" value="Não" required>
+                <label for="nao">Não</label>
 
-            <label for="preferencias">Preferências de hospedagem</label>
-            <input type="checkbox" name="preferencias" value="Piscina" required>
-            <label for="piscina">Piscina</label>
-            <input type="checkbox" name="preferencias" value="Wi-fi">
-            <label for="Wi-Fi">Wi-Fi</label>
-            <input type="checkbox" name="preferencias" value="Garagem">
-            <label for="garagem">Garagem</label>
-            <input type="checkbox" name="preferencias" value="suite">
-            <label for="piscina">Suite</label>
+                <label for="preferencias">Preferências de hospedagem</label>
+                <input type="checkbox" name="preferencias" value="Piscina" required>
+                <label for="piscina">Piscina</label>
+                <input type="checkbox" name="preferencias" value="Wi-fi">
+                <label for="Wi-Fi">Wi-Fi</label>
+                <input type="checkbox" name="preferencias" value="Garagem">
+                <label for="garagem">Garagem</label>
+                <input type="checkbox" name="preferencias" value="suite">
+                <label for="piscina">Suite</label>
 
-            <button type="submite">Solicitar orçamento</button>
-        </form>
+                <button type="submite">Solicitar orçamento</button>
+            </form>
+        </div>
     </section>
 
     <main>
