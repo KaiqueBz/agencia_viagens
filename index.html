@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
     <title>Agência de Viagens</title>
 </head>
 
@@ -20,7 +21,8 @@
             <form action="" mrthod="post">
                 <div class="topo-table">
                     <div class="conteudo-table-topo">
-                        <img src="/assets/imagens/aviao.png" alt="logo avião" ; <h1>Solicite um orçamento</h1>
+                        <img src="/assets/imagens/aviao.png" alt="logo avião">
+                        <h1>Solicite um orçamento</h1>
                     </div>
                 </div>
                 <h2>Informe seus dados</h2>
@@ -30,30 +32,51 @@
                 <input type="email" id="email" name="email" required placeholder="Email para contato">
                 <label for="celular">Celular</label>
                 <input type="tel" id="celular" name="celular" required placeholder="(xx) xxxxx-xxxx">
+                <div class="ida-volta">
+                    <div class="ida">
+                        <label for="data-ida">Data de ida</label>
+                        <input type="date" id="data-ida">
+                    </div>
+                    <div class="volta">
+                        <label for="data-volta">Data de volta</label>
+                        <input type="date" id="data-volta">
+                    </div>
+                </div>
+                <div class="origem-destino">
+                    <div class="origem">
+                        <label for="origem">Origem</label>
+                        <div class="select">
+                            <select name="origem" id="origem" required>
+                                <option value="">Partindo de </option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="destino">
+                        <label for="destino">Destino</label>
+                        <select name="destino" id="destino" required>
+                            <option value="">Indo para </option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
 
-                <label for="data-ida">Data de ida</label>
-                <input type="date" id="data-ida">
-                <label for="data-volta">Data de volta</label>
-                <input type="date" id="data-volta">
-                <label for="origem">origem</label>
-                <select name="origem" id="origem" required>
-                    <option value="">Partindo de </option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <select name="destino" id="destino" required>
-                    <option value="">Indo para </option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
 
                 <label for="quarto-infantil">Quarto com cama infantil? </label>
-                <input type="radio" id="sim" name="quarto-infantil" value="Sim" required>
-                <label for="sim">Sim</label>
-                <input type="radio" id="nao" name="quarto-infantil" value="Não" required>
-                <label for="nao">Não</label>
+                <div class="quartos">
+                    <div class="quartos-op">
+                        <input type="radio" id="sim" name="quarto-infantil" value="Sim" required>
+                        <label for="sim">Sim</label>
+                    </div>
+                    <div class="quartos-op">
+                        <input type="radio" id="nao" name="quarto-infantil" value="Não" required>
+                        <label for="nao">Não</label>
+                    </div>
+                </div>
 
                 <label for="preferencias">Preferências de hospedagem</label>
                 <input type="checkbox" name="preferencias" value="Piscina" required>
