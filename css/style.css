@@ -5,6 +5,8 @@
     max-width: 100%;
 }
 
+/*estilização do header*/
+
 header{
     display: flex;
     width: 100%;
@@ -24,3 +26,144 @@ header{
     font-size: 1.5rem;
     color: rgb(125, 0, 241);
 }
+
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+.conteudo-main{
+    width: 80%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+  
+  .subtitulo {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  
+  .subtitulo {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  /* Ofertas */
+.ofertas {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr; /* A primeira coluna (imagem grande) é mais larga */
+    grid-template-rows: 200px 200px; /* A altura das linhas é maior */
+    gap: 15px; /* Aumenta o espaçamento entre as ofertas */
+    margin-top: 20px;
+  }
+  
+  /* Cada oferta */
+  .oferta {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.4);
+    max-height: 250px; /* Define uma altura máxima para as imagens menores */
+  }
+  
+  /* Imagem maior da esquerda */
+  .oferta.destaque {
+    grid-row: span 2; /* Ocupa duas linhas */
+    height: 100%; /* Garante que use toda a altura do grid */
+    grid-column: 1; /* Fica na primeira coluna */
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center; /* A imagem será centralizada */
+    max-height: 500px; /* Define uma altura máxima maior para a imagem destaque */
+  }
+  
+  /* Outras ofertas (as menores) */
+  .oferta:nth-child(2) {
+    grid-column: 2; /* Fica na segunda coluna */
+    grid-row: 1;    /* Fica na primeira linha */
+  }
+  
+  .oferta:nth-child(3) {
+    grid-column: 2; /* Fica na segunda coluna */
+    grid-row: 2;    /* Fica na segunda linha */
+  }
+  
+  .oferta:nth-child(4) {
+    grid-column: 3; /* Fica na terceira coluna */
+    grid-row: 1;    /* Fica na primeira linha */
+  }
+  
+  .oferta:nth-child(5) {
+    grid-column: 3; /* Fica na terceira coluna */
+    grid-row: 2;    /* Fica na segunda linha */
+  }
+  
+  
+  
+  /* Destaque grande da esquerda */
+  .oferta.destaque {
+    grid-row: span 2;
+    height: 100%;
+  }
+  
+  
+  
+  .natureza {
+    margin-top: 50px;
+  }
+  
+  .natureza-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .natureza-card {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .natureza-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .conteudo-secao-dois {
+    padding: 15px;
+  }
+  
+  .conteudo-secao-dois h4 {
+    margin: 0 0 5px 0;
+  }
+  
+  .conteudo-secao-dois p {
+    margin: 0;
+    color: #555;
+  }
+  

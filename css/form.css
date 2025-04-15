@@ -125,3 +125,18 @@ form .destino{
     flex-direction: row;
     justify-content: center;
 }
+
+.escolhas-chekbox{
+    display: flex;
+}
+
+.button-form{
+    color: #fff;
+    text-decoration: none;
+    box-shadow: none;
+    background-color: rgb(121, 21, 214);
+    box-sizing: border-box;
+    margin: 1.5rem;
+    padding: 0.3rem;
+    width: 10rem;
+}

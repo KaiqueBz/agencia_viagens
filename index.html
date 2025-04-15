@@ -79,71 +79,66 @@
                 </div>
 
                 <label for="preferencias">Preferências de hospedagem</label>
-                <input type="checkbox" name="preferencias" value="Piscina" required>
-                <label for="piscina">Piscina</label>
-                <input type="checkbox" name="preferencias" value="Wi-fi">
-                <label for="Wi-Fi">Wi-Fi</label>
-                <input type="checkbox" name="preferencias" value="Garagem">
-                <label for="garagem">Garagem</label>
-                <input type="checkbox" name="preferencias" value="suite">
-                <label for="piscina">Suite</label>
+                <div class="escolhas-chekbox">
+                    <input type="checkbox" name="preferencias" value="Piscina" required>
+                    <label for="piscina">Piscina</label>
+                    <input type="checkbox" name="preferencias" value="Wi-fi">
+                    <label for="Wi-Fi">Wi-Fi</label>
+                    <input type="checkbox" name="preferencias" value="Garagem">
+                    <label for="garagem">Garagem</label>
+                    <input type="checkbox" name="preferencias" value="suite">
+                    <label for="piscina">Suite</label>
+                </div>
 
-                <button type="submite">Solicitar orçamento</button>
+                <button class="button-form" type="submite">Solicitar orçamento</button>
             </form>
         </div>
     </section>
 
     <main>
-        <h3>Ofertas</h3>
-        <p>Com até 50% de desconto</p>
+        <div class="container">
+            <h2>Ofertas</h2>
+            <p class="subtitulo">Com até <strong>50%</strong> de desconto.</p>
 
-        <div class="todas-imagens">
-            <div class="imagen-conteudo">
-                <img src="/assets/imagens/rio.jpg" alt="Rio de Janeiro">
-                <p>Rio de Janeiro</p>
-            </div>
-            <div class="imagen-conteudo">
-                <img src="/assets/imagens/manaus.jpg" alt="Manaus">
-                <p>Manaus</p>
-            </div>
-            <div class="imagen-conteudo">
-                <img src="/assets/imagens/niteroi.jpg" alt="Niteroi">
-                <p>Rio de Janeiro</p>
-            </div>
-            <div class="imagen-conteudo">
-                <img src="/assets/imagens/saopaulo.jpg" alt="São Paulo">
-                <p>São Paulo</p>
-            </div>
-            <div class="imagen-conteudo">
-                <img src="/assets/imagens/maranhao.jpg" alt="Maranão">
-                <p>Maranhão</p>
+            <div class="ofertas">
+                <div class="oferta destaque" style="background-image: url('/assets/imagens/rio.jpg')">
+                    Rio de Janeiro
+                </div>
+                <div class="oferta" style="background-image: url('/assets/imagens/manaus.jpg')">Manaus</div>
+                <div class="oferta" style="background-image: url('/assets/imagens/saopaulo.jpg')">São Paulo</div>
+                <div class="oferta" style="background-image: url('/assets/imagens/niteroi.jpg')">Rio de Janeiro</div>
+                <div class="oferta" style="background-image: url('/assets/imagens/maranhao.jpg')">Maranhão</div>
             </div>
         </div>
-        <section>
-            <div class="texto-section">
-                <h3>Explore a Natureza</h3>
-                <p>Viaje e veja o melhor que a natureza tem a oferecer</p>
-            </div>
 
-            <div class="imagem-secao-dois">
-                <img src="/assets/imagens/lencol.jpg" alt="Lençois Maranhenses">
-                <div class="conteudo-secao-dois">
-                    <h4> Lençois Maranhenses, Brasil</h4>
-                    <p>Ida e volta a partir de R$79</p>
+        <div class="container">
+            <div class="natureza">
+                <h3>Explore a Natureza</h3>
+                <p class="subtitulo">Viaje e veja o melhor que a natureza tem a oferecer</p>
+
+                <div class="natureza-grid">
+                    <div class="natureza-card">
+                        <img src="/assets/imagens/lencol.jpg" alt="Lençóis Maranhenses">
+                        <div class="conteudo-secao-dois">
+                            <h4>Lençóis Maranhenses, Brasil</h4>
+                            <p>Ida e volta a partir de R$79</p>
+                        </div>
+                    </div>
+
+                    <div class="natureza-card">
+                        <img src="/assets/imagens/goias.jpg" alt="Cachoeira Santa Bárbara">
+                        <div class="conteudo-secao-dois">
+                            <h4>Cachoeira Santa Bárbara, Brasil</h4>
+                            <p>Ida e volta por R$139</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="imagem-secao-dois">
-                <img src="/assets/imagens/goias.jpg" alt="Cachoeira Santa Bárbara">
-                <div class="conteudo-secao-dois">
-                    <h4> Cachoeira Santa Bárbara, Brasil</h4>
-                    <p>Ida e volta por R$139</p>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer>
-
+        
     </footer>
 </body>
 
