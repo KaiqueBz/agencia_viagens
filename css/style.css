@@ -214,7 +214,7 @@ main{
 
   .local::before {
     content: '';
-    background-image: url('/assets/imagens/local.png');
+    background-image: url('../../agencia_viagens/assets/imagens/local.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -228,7 +228,7 @@ main{
   
   .telefone::before {
     content: '';
-    background-image: url('/assets/imagens/telefone.png');
+    background-image: url('../../agencia_viagens/assets/imagens/telefone.png');
     background-size: contain; /* Ajusta a imagem para caber no espaço */
     background-repeat: no-repeat;
     background-position: center; /* Centraliza a imagem */
@@ -241,7 +241,7 @@ main{
   
   .email::before {
     content: '';
-    background-image: url('/assets/imagens/email.png');
+    background-image: url('../../agencia_viagens/assets/imagens/email.png');
     background-size: contain; /* Ajusta a imagem para caber no espaço */
     background-repeat: no-repeat;
     background-position: center; /* Centraliza a imagem */
@@ -256,7 +256,7 @@ main{
   
   .facebook::before {
     content: '';
-    background-image: url('/assets/imagens/fb.png');
+    background-image: url('../../agencia_viagens/assets/imagens/fb.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -270,7 +270,7 @@ main{
   
   .instagram::before {
     content: '';
-    background-image: url('/assets/imagens/ig.png');
+    background-image: url('../../agencia_viagens/assets/imagens/ig.png');
     background-size: contain; /* Ajusta a imagem para caber no espaço */
     background-repeat: no-repeat;
     background-position: center; /* Centraliza a imagem */
@@ -283,7 +283,7 @@ main{
   
   .twitter::before {
     content: '';
-    background-image: url('/assets/imagens/tt.png');
+    background-image: url('../../agencia_viagens/assets/imagens/tt.png');
     background-size: contain; /* Ajusta a imagem para caber no espaço */
     background-repeat: no-repeat;
     background-position: center; /* Centraliza a imagem */
