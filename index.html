@@ -135,7 +135,186 @@
                             <h4>Cachoeira Santa Bárbara, Brasil</h4>
                             <p>Ida e volta por R$139</p>
                         </div>
-                    </div>
+                    </div>                    <!-- Declaração do tipo de documento HTML -->
+                    <!DOCTYPE html>
+                    <html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+                    
+                    <head>
+                        <!-- Configurações e metadados da página -->
+                        <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+                        <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo de estilos principal -->
+                        <link rel="stylesheet" href="css/form.css"> <!-- Link para o arquivo de estilos do formulário -->
+                        <title>Agência de Viagens</title> <!-- Título da página -->
+                    </head>
+                    
+                    <body>
+                        <!-- Cabeçalho da página -->
+                        <header>
+                            <div class="conteudo-header">
+                                <img src="assets/imagens/local-logo.png" alt="logo"> <!-- Logo da agência -->
+                                <p>Agência de Viagens</p> <!-- Nome da agência -->
+                            </div>
+                        </header>
+                    
+                        <!-- Seção do formulário -->
+                        <section class="form">
+                            <div class="form-aling">
+                                <!-- Formulário para solicitação de orçamento -->
+                                <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" mrthod="post">
+                                    <div class="topo-table">
+                                        <div class="conteudo-table-topo">
+                                            <img src="assets/imagens/aviao.png" alt="logo avião"> <!-- Ícone de avião -->
+                                            <h1>Solicite um orçamento</h1> <!-- Título do formulário -->
+                                        </div>
+                                    </div>
+                                    <h2>Informe seus dados</h2> <!-- Subtítulo do formulário -->
+                    
+                                    <!-- Campos de entrada para nome, email e celular -->
+                                    <label for="name">Nome</label>
+                                    <input type="text" id="name" name="name" required placeholder="Nome completo">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="Email para contato">
+                                    <label for="celular">Celular</label>
+                                    <input type="tel" id="celular" name="celular" required placeholder="(xx) xxxxx-xxxx">
+                    
+                                    <!-- Campos para selecionar datas de ida e volta -->
+                                    <div class="ida-volta">
+                                        <div class="ida">
+                                            <label for="data-ida">Data de ida</label>
+                                            <input type="date" id="data-ida">
+                                        </div>
+                                        <div class="volta">
+                                            <label for="data-volta">Data de volta</label>
+                                            <input type="date" id="data-volta">
+                                        </div>
+                                    </div>
+                    
+                                    <!-- Campos para selecionar origem e destino -->
+                                    <div class="origem-destino">
+                                        <div class="origem">
+                                            <label for="origem">Origem</label>
+                                            <div class="select">
+                                                <select name="origem" id="origem" required>
+                                                    <option selected>Partindo de</option>
+                                                    <option value="AM">Amazonas</option>
+                                                    <option value="RJ">Rio de Janeiro</option>
+                                                    <option value="SP">São Paulo</option>
+                                                    <option value="GO">Goias</option>
+                                                    <option value="MA">Maranhão</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="destino">
+                                            <label for="destino">Destino</label>
+                                            <select name="destino" id="destino" required>
+                                                <option selected>Indo para</option>
+                                                <option value="AM">Amazonas</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="SP">São Paulo</option>
+                                                <option value="GO">Goias</option>
+                                                <option value="MA">Maranhão</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                    
+                                    <!-- Opção para quarto com cama infantil -->
+                                    <label for="quarto-infantil">Quarto com cama infantil? </label>
+                                    <div class="quartos">
+                                        <div class="quartos-op">
+                                            <input type="radio" id="sim" name="quarto-infantil" value="Sim" required>
+                                            <label for="sim">Sim</label>
+                                        </div>
+                                        <div class="quartos-op">
+                                            <input type="radio" id="nao" name="quarto-infantil" value="Não" required>
+                                            <label for="nao">Não</label>
+                                        </div>
+                                    </div>
+                    
+                                    <!-- Preferências de hospedagem -->
+                                    <label for="preferencias">Preferências de hospedagem</label>
+                                    <div class="escolhas-chekbox">
+                                        <input type="checkbox" name="preferencias" value="Piscina" required>
+                                        <label for="piscina">Piscina</label>
+                                        <input type="checkbox" name="preferencias" value="Wi-fi">
+                                        <label for="Wi-Fi">Wi-Fi</label>
+                                        <input type="checkbox" name="preferencias" value="Garagem">
+                                        <label for="garagem">Garagem</label>
+                                        <input type="checkbox" name="preferencias" value="suite">
+                                        <label for="piscina">Suite</label>
+                                    </div>
+                    
+                                    <!-- Botão para enviar o formulário -->
+                                    <button class="button-form" type="submite">Solicitar orçamento</button>
+                                </form>
+                            </div>
+                        </section>
+                    
+                        <!-- Conteúdo principal -->
+                        <main>
+                            <div class="container">
+                                <h2>Ofertas</h2> <!-- Título da seção de ofertas -->
+                                <p class="subtitulo">Com até <strong>50%</strong> de desconto.</p> <!-- Subtítulo -->
+                    
+                                <!-- Lista de ofertas -->
+                                <div class="ofertas">
+                                    <div class="oferta destaque" style="background-image: url('assets/imagens/rio.jpg')">
+                                        Rio de Janeiro
+                                    </div>
+                                    <div class="oferta" style="background-image: url('assets/imagens/manaus.jpg')">Manaus</div>
+                                    <div class="oferta" style="background-image: url('assets/imagens/saopaulo.jpg')">São Paulo</div>
+                                    <div class="oferta" style="background-image: url('assets/imagens/niteroi.jpg')">Rio de Janeiro</div>
+                                    <div class="oferta" style="background-image: url('assets/imagens/maranhao.jpg')">Maranhão</div>
+                                </div>
+                            </div>
+                    
+                            <div class="container">
+                                <div class="natureza">
+                                    <h3>Explore a Natureza</h3> <!-- Título da seção -->
+                                    <p class="subtitulo">Viaje e veja o melhor que a natureza tem a oferecer</p> <!-- Subtítulo -->
+                    
+                                    <!-- Lista de destinos relacionados à natureza -->
+                                    <div class="natureza-grid">
+                                        <div class="natureza-card">
+                                            <img src="assets/imagens/lencol.jpg" alt="Lençóis Maranhenses"> <!-- Imagem do destino -->
+                                            <div class="conteudo-secao-dois">
+                                                <h4>Lençóis Maranhenses, Brasil</h4> <!-- Nome do destino -->
+                                                <p>Ida e volta a partir de R$79</p> <!-- Preço -->
+                                            </div>
+                                        </div>
+                    
+                                        <div class="natureza-card">
+                                            <img src="assets/imagens/goias.jpg" alt="Cachoeira Santa Bárbara"> <!-- Imagem do destino -->
+                                            <div class="conteudo-secao-dois">
+                                                <h4>Cachoeira Santa Bárbara, Brasil</h4> <!-- Nome do destino -->
+                                                <p>Ida e volta por R$139</p> <!-- Preço -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    
+                        <!-- Rodapé -->
+                        <footer>
+                            <div class="contatos">
+                                <div class="contato">
+                                    <h4>CONTATO</h4> <!-- Título da seção de contato -->
+                                    <span class="local"> Rio de Janeiro, RJ</span> <!-- Localização -->
+                                    <span class="telefone"> Telefone: (21) 9999-9999</span> <!-- Telefone -->
+                                    <span class="email"> Email: contato@agencia.com.br</span> <!-- Email -->
+                                </div>
+                                <div class="redes-sociais">
+                                    <h4>REDES SOCIAIS</h4> <!-- Título da seção de redes sociais -->
+                                    <span class="facebook">/AgenciaDeViagem</span> <!-- Facebook -->
+                                    <span class="instagram">@AgenciaDeViagem</span> <!-- Instagram -->
+                                    <span class="twitter">@AgenciaDeViagem</span> <!-- Twitter -->
+                                </div>
+                            </div>
+                        </footer>
+                    </body>
+                    
+                    </html>
                 </div>
             </div>
         </div>
